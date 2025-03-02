@@ -9,6 +9,7 @@ body {
     background: linear-gradient(to bottom right, #74c9eb, rgb(20, 3, 66));
     font-family: Arial, Helvetica, sans-serif;
     color: lightblue;
+    overflow: hidden;
 }
 
 header {
