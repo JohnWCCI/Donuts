@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Donuts</title>
+</head>
+
+<body>
+    <header>
+    <h1>Welcome to The Donut Shop</h1>
+</header>
+    <div class="container">
+        <div class="panel">
+            <button onclick="clickDonut()">Get a Donut</button>
+            <div id="donutCounter"></div>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div  class="panel">
+            <label id="autoCount"></label>
+        <button id="autoClicker" onclick="clickAutoDonut()" disabled>Buy Auto Clicker</button>
+        <label id="autoCost">auto</label>
+        
+        </div>
+    </div>
+    <script src="donuts.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
