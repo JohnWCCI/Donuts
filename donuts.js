@@ -10,7 +10,7 @@ class DonutMaker {
         this.donutCount = 0; // the count of donuts
         this.multiplier = 1; // amount of donuts per click
         this.autoClickerCount = 0;
-        this.autoClickerCost = 10;
+        this.autoClickerCost = 100;
 
     }
 

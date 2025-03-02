@@ -10,21 +10,36 @@
 
 <body>
     <header>
-    <h1>Welcome to The Donut Shop</h1>
-</header>
+        <h1>Donut Clicker Game</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://orteil.dashnet.org/cookieclicker/">Game Inspiration</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="aboutfred.html">About Fred</a></li>
+                        <li><a href="aboutme.html">About Developer</a></li>
+                        <li><a href="aboutgame.html">About Game</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <div class="panel">
-            <button onclick="clickDonut()">Get a Donut</button>
-            <div id="donutCounter"></div>
-            <button onclick="reset()">Reset</button>
+        <div class="donut-section">
+            <img src="https://pngimg.com/d/donut_PNG63.png" alt="Donut" class="donut-icon">
+            <div id="donutCounter">Donuts: 0
+            </div>
+            <button onclick="clickDonut()" class="button">Make Donut</button>
         </div>
-        <div  class="panel">
-            <label id="autoCount"></label>
-        <button id="autoClicker" onclick="clickAutoDonut()" disabled>Buy Auto Clicker</button>
-        <label id="autoCost">auto</label>
-        
-        </div>
+        <div id="autoCost">Auto Clickers</div>
+
+        <button id="autoClicker" onclick="clickAutoDonut()" class="button" disabled>Buy Auto Clicker</button>
+        <button onclick="reset()" id="reset-button" class="button">Reset Game</button>
+
     </div>
+
     <script src="donuts.js"></script>
     <script src="app.js"></script>
 </body>

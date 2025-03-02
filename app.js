@@ -24,11 +24,12 @@ function updateDisplay(){
 }
 
 function updateUI(){
-    console.log("UpdateUi");
-    donutCount.innerText = donutMaker.getDonuts();
+    autoCost.innerText = "Auto Clickers: " + donutMaker.getAutoClicker() + " (Cost: " + donutMaker.getAutoClickerCost() + "  donuts)";
+    donutCount.innerText = "donuts: " + donutMaker.getDonuts() ;
     autoClicker.disabled = donutMaker.checkAuto();
-    autoCount.innerText = donutMaker.getAutoClicker();
-    autoCost.innerText= "Next auto clicker cost: " + donutMaker.getAutoClickerCost();
+   
+   
+  
 }
 
 function reset(){
